@@ -38,41 +38,102 @@ block content
           img(src="/assets/images/europlast.svg", alt="")
       .top__brands--title Все бренды и производители
   main.main
-    h2.main__title Интернет-магазин отделочных материалов от ведущих брендов
-    .main__grid
-      .main__grid--column.main-column
-        .main-column__item.news
-          .news__content
-            .swiper-container
-              // Additional required wrapper
-              .swiper-wrapper
-                // Slides
-                .swiper-slide
-                  img.news__img(src="/assets/images/news.jpg", alt="")
-                  .slider__content
-                    div Новая коллекция — невероятные 3D панели от &nbsp
-                      span Orac Decor
-                    p Новые 3D панели от Opac Decor в очередной раз доказали — отделка стен способна полностью поменять восприятие интерьера. Объёмные покрытия поражают воображение и позволяют создать уникальный дизайн без лишних усилий. Изучите новую коллекцию от Opac Decor.
-                .swiper-slide
-                  img.news__img(src="/assets/images/news.jpg", alt="")
-                  .slider__content
-                    div Новая коллекция — невероятные 3D панели от &nbsp
-                      span Orac Decor
-                    p Новые 3D панели от Opac Decor в очередной раз доказали — отделка стен способна полностью поменять восприятие интерьера. Объёмные покрытия поражают воображение и позволяют создать уникальный дизайн без лишних усилий. Изучите новую коллекцию от Opac Decor.
-                .swiper-slide
-                  img.news__img(src="/assets/images/news.jpg", alt="")
-                  .slider__content
-                    div Новая коллекция — невероятные 3D панели от &nbsp
-                      span Orac Decor
-                    p Новые 3D панели от Opac Decor в очередной раз доказали — отделка стен способна полностью поменять восприятие интерьера. Объёмные покрытия поражают воображение и позволяют создать уникальный дизайн без лишних усилий. Изучите новую коллекцию от Opac Decor.
-              // If we need pagination
-              .swiper-pagination
-              // If we need navigation buttons
-              .swiper-button-prev
-              .swiper-button-next
-              // If we need scrollbar
-              a(href="/")
-                button В каталог 
+    .container
+      h2.main__title Интернет-магазин отделочных материалов от ведущих брендов
+      .main-grid
+        .main-column
+          .main-column__item.news
+            .news__content
+              .swiper-container
+                // Additional required wrapper
+                .swiper-wrapper
+                  // Slides
+                  .swiper-slide
+                    img.news__img(src="/assets/images/news.jpg", alt="")
+                    .slider__content
+                      .slider-name Новая коллекция — невероятные 3D панели от &nbsp
+                        span Orac Decor
+                      p Новые 3D панели от Opac Decor в очередной раз доказали — отделка стен способна полностью поменять восприятие интерьера. Объёмные покрытия поражают воображение и позволяют создать уникальный дизайн без лишних усилий. Изучите новую коллекцию от Opac Decor.
+                      .slider-links
+                        .swiper-pagination
+                        .swiper-buttons
+                          .swiper-button-prev
+                          .swiper-button-next
+                        a(href="/")
+                          button В каталог
+                  .swiper-slide
+                    img.news__img(src="/assets/images/news.jpg", alt="")
+                    .slider__content
+                      .slider-name Новая коллекция — невероятные 3D панели от &nbsp
+                        span Orac Decor
+                      p Новые 3D панели от Opac Decor в очередной раз доказали — отделка стен способна полностью поменять восприятие интерьера. Объёмные покрытия поражают воображение и позволяют создать уникальный дизайн без лишних усилий. Изучите новую коллекцию от Opac Decor.
+                      .slider-links
+                        .swiper-pagination
+                        .swiper-buttons
+                          .swiper-button-prev
+                          .swiper-button-next
+                        a(href="/")
+                          button В каталог
+                  .swiper-slide
+                    img.news__img(src="/assets/images/news.jpg", alt="")
+                    .slider__content
+                      .slider-name Новая коллекция — невероятные 3D панели от &nbsp
+                        span Orac Decor
+                      p Новые 3D панели от Opac Decor в очередной раз доказали — отделка стен способна полностью поменять восприятие интерьера. Объёмные покрытия поражают воображение и позволяют создать уникальный дизайн без лишних усилий. Изучите новую коллекцию от Opac Decor.
+                      .slider-links
+                        .swiper-pagination
+                        .swiper-buttons
+                          .swiper-button-prev
+                          .swiper-button-next
+                        a(href="/")
+                          button В каталог
+                // If we need pagination
+                // If we need navigation buttons
+                // If we need scrollbar
+          .main-row
+            .main-column__item.catalog
+              .catalog__content
+                .catalog__title Каталоги от известных брендов
+                a(href="/").catalog__download Скачать
+                  img(src="/assets/images/download.svg", alt="")
+            .main-column__item.cowork
+              .cowork__content
+                .cowork__title Каталоги от известных брендов
+                a(href="/").cowork__more Узнать подробнее
+        .main-column
+          .main-column__item.discounts
+            .discounts__content
+              a(href="/").discounts__more Узнать подробнее
+  section.materials
+    .container
+      .materials__title Материалы на любой вкус
+      .materials__grid
+        .materials__item
+          img.materials__img(src="/assets/images/materials/interior.png", alt="")
+          .materials__name Интерьер
+          .materials__info Лепной декор брендов Orac Decor, Европласт, Cosca, Перфект и многих других! Разнообразие материалов очень велико — угловые детали, каминные полки, статуи и пр.
+        .materials__item
+          img.materials__img(src="/assets/images/materials/wallpapers.png", alt="")
+          .materials__name Обои
+          .materials__info Качественные обои таких известных брендов как Calcutta, Chesterwall, Hookedonwalls, Khroma и многих других. От рулонных до панно, от фотообоев до стёганных. 
+        .materials__item
+          img.materials__img(src="/assets/images/materials/fasade.png", alt="")
+          .materials__name Фасад
+          .materials__info Материалы для оформления фасада. С ними вы сможете оформить окно, установить колонну, украсить стену орнаментами и накладными элементами. 
+        .materials__item
+          img.materials__img(src="/assets/images/materials/floor.png", alt="")
+          .materials__name Напольные покрытия
+          .materials__info Разнообразные напольные покрытия — качественный ламинат, ПВХ-плитка (виниловая), паркетные доски из натуральной древесины. 
+        .materials__item
+          img.materials__img(src="/assets/images/materials/glue.png", alt="")
+          .materials__name Клей
+          .materials__info Клеящие вещества для разных поверхностей. Стыковочные, монтажные, водостойкие, для внутренних или наружных работ. Клей позволит  выполнить монтажные или ремонтные работы.
+        .materials__item
+          img.materials__img(src="/assets/images/materials/color.png", alt="")
+          .materials__name Краски
+          .materials__info Матовые, глянцевые и перламутровые краски разных цветов. В ассортименте представлены краски таких известных производителей как Sherwin Williams, Dulux и Sikkens.
+
+
 
 
 
