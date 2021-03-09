@@ -88,3 +88,23 @@ window.onload = function(){
         }
       }
 }
+
+
+$(function () {
+
+  var activeIndex = $('.active-tab').index(),
+      $contentlis = $('.inspire__tabs-content li'),
+      $tabslis = $('.inspire__tabs li');
+  
+  // Show content of active tab on loads
+  $contentlis.eq(activeIndex).show();
+
+  $('.inspire__tabs').on('click', 'li', function (e) {
+    var $current = $(e.currentTarget),
+        index = $current.index();
+    
+    $tabslis.removeClass('active-tab');
+    $current.addClass('active-tab');
+    $contentlis.hide().eq(index).fadeIn();
+	 });
+});
