@@ -137,7 +137,12 @@ module.exports = env => {
         { from: '../browserconfig.xml', to: 'browserconfig.xml' },
         { from: 'assets/images/favicons/android-chrome-192x192.png', to: 'assets/images/android-chrome-192x192.png' },
         { from: 'assets/images/favicons/android-chrome-256x256.png', to: 'assets/images/android-chrome-256x256.png' },
-        { from: 'assets/images/favicons/mstile-150x150.png', to: 'assets/images/mstile-150x150.png' }
+        { from: 'assets/images/favicons/mstile-150x150.png', to: 'assets/images/mstile-150x150.png' },
+        {
+          //Note:- No wildcard is specified hence will copy all files and folders
+          from: 'assets/images', //Will resolve to RepoDir/src/assets 
+          to: 'assets/images' //Copies all files from above dest to dist/assets
+      },
       ]),
       new MiniCssExtractPlugin({
         filename: 'assets/css/[name].[hash:7].bundle.css',
