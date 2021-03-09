@@ -109,29 +109,168 @@ block content
       .materials__title Материалы на любой вкус
       .materials__grid
         .materials__item
-          img.materials__img(src="/assets/images/materials/interior.png", alt="")
+          .materials__img
+            img(src="/assets/images/materials/interior.png", alt="")
           .materials__name Интерьер
           .materials__info Лепной декор брендов Orac Decor, Европласт, Cosca, Перфект и многих других! Разнообразие материалов очень велико — угловые детали, каминные полки, статуи и пр.
         .materials__item
-          img.materials__img(src="/assets/images/materials/wallpapers.png", alt="")
+          .materials__img
+            img(src="/assets/images/materials/wallpapers.png", alt="")
           .materials__name Обои
           .materials__info Качественные обои таких известных брендов как Calcutta, Chesterwall, Hookedonwalls, Khroma и многих других. От рулонных до панно, от фотообоев до стёганных. 
         .materials__item
-          img.materials__img(src="/assets/images/materials/fasade.png", alt="")
+          .materials__img
+            img(src="/assets/images/materials/fasade.png", alt="")
           .materials__name Фасад
           .materials__info Материалы для оформления фасада. С ними вы сможете оформить окно, установить колонну, украсить стену орнаментами и накладными элементами. 
         .materials__item
-          img.materials__img(src="/assets/images/materials/floor.png", alt="")
+          .materials__img
+            img(src="/assets/images/materials/floor.png", alt="")
           .materials__name Напольные покрытия
           .materials__info Разнообразные напольные покрытия — качественный ламинат, ПВХ-плитка (виниловая), паркетные доски из натуральной древесины. 
         .materials__item
-          img.materials__img(src="/assets/images/materials/glue.png", alt="")
+          .materials__img
+            img(src="/assets/images/materials/glue.png", alt="")
           .materials__name Клей
           .materials__info Клеящие вещества для разных поверхностей. Стыковочные, монтажные, водостойкие, для внутренних или наружных работ. Клей позволит  выполнить монтажные или ремонтные работы.
         .materials__item
-          img.materials__img(src="/assets/images/materials/color.png", alt="")
+          .materials__img
+            img(src="/assets/images/materials/color.png", alt="")
           .materials__name Краски
           .materials__info Матовые, глянцевые и перламутровые краски разных цветов. В ассортименте представлены краски таких известных производителей как Sherwin Williams, Dulux и Sikkens.
+  section.stages
+    .container
+      .stages__slider
+        .stages-container
+          .stages-wrapper
+            .stages-slide
+              .stages__top
+                img(src="/assets/images/lock.svg", alt="")
+                a(href="/") Подробнее 
+                  img(src="/assets/images/more.svg", alt="")
+              .stages__title Оплата
+              p Заказать лепнину, напольные покрытия, краску или обои можно в офисе у менеджеров компании, либо отправив заявку через сайт или по телефону.
+            .stages-slide
+              .stages__top
+                img(src="/assets/images/truck.svg", alt="")
+                a(href="/") Подробнее 
+                  img(src="/assets/images/more.svg", alt="")
+              .stages__title Доставка
+              p Мы гарантируем бережное отношение к товару во время доставки. После получения и обработки заказа, товар будет доставлен в кратчайший срок.
+            .stages-slide
+              .stages__top
+                img(src="/assets/images/lock.svg", alt="")
+                a(href="/") Подробнее 
+                  img(src="/assets/images/more.svg", alt="")
+              .swiper__title Оплата
+              p Заказать лепнину, напольные покрытия, краску или обои можно в офисе у менеджеров компании, либо отправив заявку через сайт или по телефону.
+            .stages-slide
+              .stages__top
+                img(src="/assets/images/truck.svg", alt="")
+                a(href="/") Подробнее 
+                  img(src="/assets/images/more.svg", alt="")
+              .stages__title Доставка
+              p Мы гарантируем бережное отношение к товару во время доставки. После получения и обработки заказа, товар будет доставлен в кратчайший срок.
+          .stages-pagination
+  section.calc
+    .container
+      .calc__grid
+        .calc__column
+          .calculation__title Подберем товар прямо сейчас?
+          .calculation
+            .calculation__grid
+              .grid__item
+                img(src="/assets/images/materials/interior.png", alt="")
+                .grid-name Интерьер
+              .grid__item
+                img(src="/assets/images/materials/wallpapers.png", alt="")
+                .grid-name Обои
+              .grid__item
+                img(src="/assets/images/materials/fasade.png", alt="")
+                .grid-name Фасад
+              .grid__item
+                img(src="/assets/images/materials/floor.png", alt="")
+                .grid-name Нап. покрытия
+              .grid__item
+                img(src="/assets/images/materials/glue.png", alt="")
+                .grid-name Клей
+              .grid__item
+                img(src="/assets/images/materials/color.png", alt="")
+                .grid-name Краски
+          .params
+            .params__price
+              .page-range
+                span(style="padding-top: 7px; text-align: left;") Цена
+                .min-max
+                  span.range-min
+                  span.range-max
+                input(value='500' min='0' max='15000' step='10' type='range')
+                input(value='50000' min='0' max='15000' step='10' type='range')
+            .params__elems
+              select(name="elem")
+                option(value="" default) Элемент декора
+              select(name="brand")
+                option(value="" default) Бренд
+              select(name="state")  
+                option(value="" default) Страна производства
+            .params__most
+              .most__title Чаще всего ищут:
+              .most__grid
+                span Европласт
+                span Европласт/плинтусы
+                span Orac Decor/плинтусы
+                span Orac Decor
+                span Delux/синяя краска
+                span Kronopol
+                span Delux/синяя краска
+        .calc__column
+          .filter
+            .filter__title Фильтр
+            .filter__body
+              .filter__item
+                span Длина, мм
+                img(src="/assets/images/arrow-right.svg", alt="")
+              .filter__item
+                span Высота, мм
+                img(src="/assets/images/arrow-right.svg", alt="")
+              .filter__item
+                span Ширина, мм
+                img(src="/assets/images/arrow-right.svg", alt="")
+              .filter__item
+                span Материал
+                img(src="/assets/images/arrow-right.svg", alt="")
+              .filter__item
+                span Рельеф
+                img(src="/assets/images/arrow-right.svg", alt="")
+              .filter__item
+                span Гибкое исполнение
+                img(src="/assets/images/arrow-right.svg", alt="")
+              .filter__item
+                span Дизайн
+                img(src="/assets/images/arrow-right.svg", alt="")
+              .filter__item
+                span Диаметр, мм
+                img(src="/assets/images/arrow-right.svg", alt="")
+              .filter__item
+                span Скрытое освещение
+                img(src="/assets/images/arrow-right.svg", alt="")
+              .filter__item
+                span Тип карниза
+                img(src="/assets/images/arrow-right.svg", alt="")
+              .filter__item
+                span Оттенок
+                img(src="/assets/images/arrow-right.svg", alt="")
+              .filter__item
+                span Тип молдинга
+                img(src="/assets/images/arrow-right.svg", alt="")
+              .filter__item
+                span Форма
+                img(src="/assets/images/arrow-right.svg", alt="")
+            button.filter__btn Подобрать 
+
+        
+
+
 
 
 
