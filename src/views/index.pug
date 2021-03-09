@@ -1,0 +1,79 @@
+extends ./layouts/master.pug
+
+block title
+  title Интернет-магазин лепного декора из полиуретана, ведущих брендов
+
+block manifestBrowserconfigFiles
+  link(href='../manifest.json', rel='manifest')
+  meta(name='msapplication-config' content='../browserconfig.xml')
+
+block content
+
+  // Menu
+  +menu('home')
+
+  //- Desktop page
+  section.top
+    .container
+      ul.top__brands
+        li
+          img(src="/assets/images/kronopol.svg", alt="")
+        li
+          img(src="/assets/images/quickstep.svg", alt="")
+        li
+          img(src="/assets/images/orac.svg", alt="")
+        li
+          img(src="/assets/images/sherwin.svg", alt="")
+        li
+          img(src="/assets/images/decomaster.svg", alt="")
+        li
+          img(src="/assets/images/sikkens.svg", alt="")
+        li
+          img(src="/assets/images/dulux.svg", alt="")
+        li
+          img(src="/assets/images/cosca.svg", alt="")
+        li
+          img(src="/assets/images/balterio.svg", alt="")
+        li
+          img(src="/assets/images/europlast.svg", alt="")
+      .top__brands--title Все бренды и производители
+  main.main
+    h2.main__title Интернет-магазин отделочных материалов от ведущих брендов
+    .main__grid
+      .main__grid--column.main-column
+        .main-column__item.news
+          .news__content
+            .swiper-container
+              // Additional required wrapper
+              .swiper-wrapper
+                // Slides
+                .swiper-slide
+                  img.news__img(src="/assets/images/news.jpg", alt="")
+                  .slider__content
+                    div Новая коллекция — невероятные 3D панели от &nbsp
+                      span Orac Decor
+                    p Новые 3D панели от Opac Decor в очередной раз доказали — отделка стен способна полностью поменять восприятие интерьера. Объёмные покрытия поражают воображение и позволяют создать уникальный дизайн без лишних усилий. Изучите новую коллекцию от Opac Decor.
+                .swiper-slide
+                  img.news__img(src="/assets/images/news.jpg", alt="")
+                  .slider__content
+                    div Новая коллекция — невероятные 3D панели от &nbsp
+                      span Orac Decor
+                    p Новые 3D панели от Opac Decor в очередной раз доказали — отделка стен способна полностью поменять восприятие интерьера. Объёмные покрытия поражают воображение и позволяют создать уникальный дизайн без лишних усилий. Изучите новую коллекцию от Opac Decor.
+                .swiper-slide
+                  img.news__img(src="/assets/images/news.jpg", alt="")
+                  .slider__content
+                    div Новая коллекция — невероятные 3D панели от &nbsp
+                      span Orac Decor
+                    p Новые 3D панели от Opac Decor в очередной раз доказали — отделка стен способна полностью поменять восприятие интерьера. Объёмные покрытия поражают воображение и позволяют создать уникальный дизайн без лишних усилий. Изучите новую коллекцию от Opac Decor.
+              // If we need pagination
+              .swiper-pagination
+              // If we need navigation buttons
+              .swiper-button-prev
+              .swiper-button-next
+              // If we need scrollbar
+              a(href="/")
+                button В каталог 
+
+
+
+

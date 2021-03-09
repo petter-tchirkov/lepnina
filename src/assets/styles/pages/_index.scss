@@ -1,0 +1,123 @@
+/* src/assets/styles/pages/_index.scss  */
+
+.top{
+  &__brands{
+    padding-top: 35px;
+    margin-bottom: 22px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    &--title{
+      text-align: center;
+      margin-bottom: 65px;
+    }
+  }
+}
+.main{
+  &__title{
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 50px;
+    color: #818784;
+    text-align: center;
+    margin-bottom: 68px;
+  }
+}
+.swiper-container {
+  width: 1027px;
+  height: 340px;
+  position: relative;
+  .swiper-button-next{
+    position: absolute;
+    bottom: 40px;
+    top: auto;
+    left: 75%;
+    &:after{
+      font-family: none;
+      content: '';
+      background: url('/assets/images/arrow-right.svg');
+      width: 30px;
+      height: 30px;
+    }
+  }
+  .swiper-button-prev{
+    position: absolute;
+    bottom: 40px;
+    top: auto;
+    left: 70%;
+    &:after{
+      font-family: none;
+      content: '';
+      background: url('/assets/images/arrow-left.svg');
+      width: 30px;
+      height: 30px;
+    }
+  }
+  .swiper-pagination{
+    position: absolute;
+    bottom: 44px;
+    left: 27px;
+    color: #939393;
+    .swiper-pagination-current{
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 139%;
+    }
+    .swiper-pagination-total{
+      font-size: 20px;
+      line-height: 139%;
+    }
+  }
+  .swiper-slide{
+    display: flex;
+    .news__img{
+      max-width: 482px;
+      width: 100%;
+      height: 300px;
+      margin-right: 40px;
+    }
+    .slider__content{
+      div{
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 120%;
+        color: #818784;
+        margin-bottom: 20px;
+        span{
+          color: #FF7475 !important;
+        } 
+      }
+      
+      p{
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 140%;
+        font-family: $light;
+        color: #939393;
+      }
+    }
+  }
+  a{
+    position: absolute;
+    bottom: 37px;
+    right: 0;
+    button{
+      width: 158px;
+      height: 46px;
+      background: #FF7475;
+      border-radius: 5px;
+      border: none;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 21px;
+      color: #fff;
+    }
+  }
+}
+
+
+/*
+  Responsive
+*/
+
+

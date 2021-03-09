@@ -1,0 +1,31 @@
+/* src/assets/styles/base/_fonts.scss  */
+
+
+
+@font-face {
+  font-family: 'Gilroy-Light';
+  font-weight: 300;
+  src: url('@~fonts/Gilroy-Light.otf');
+}
+
+@font-face {
+  font-family: 'Gilroy-ExtraBold';
+  font-weight: 700;
+  src: url('@~fonts/Gilroy-ExtraBold.otf');
+}
+
+@font-face {
+  font-family: 'Gilroy-Regular';
+  font-weight: 400;
+  src: url('@~fonts/Gilroy-Regular.woff');
+}
+
+@font-face {
+  font-family: 'Gilroy-Bold';
+  font-weight: 600;
+  src: url('@~fonts/Gilroy-Bold.woff');
+}
+
+$gilroy: 'Gilroy-Regular', sans-serif;
+$bold: 'Gilroy-Bold', sans-serif;
+$light: 'Gilroy-Light', sans-serif;
