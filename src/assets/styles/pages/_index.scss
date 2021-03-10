@@ -11,6 +11,10 @@ img{
   height: auto;
   object-fit: contain;
 }
+*{
+  padding: 0;
+  margin: 0;
+}
 .top{
   &__row{
     display: flex;
@@ -472,6 +476,7 @@ img{
           transform: translate(-50%, -50%);
           width: 100%;
           text-align: center;
+          color: #939393;
         }
       }
     }
@@ -562,6 +567,7 @@ img{
         margin-bottom: 20px;
         border-radius: 6.01242px;
         border: 1.20248px solid #F1F6F7;
+        text-align: left;
         &[aria-expanded="true"]{
           &::after{
             background-image: url('/assets/images/arrow-down.svg');
@@ -650,10 +656,11 @@ img{
         font-size: 18px;
         line-height: 21px;
         color: #939393;
-        padding: 13px 0;
+        padding: 12px 0;
         border: none;
         left: 0;
         position: relative;
+        text-align: left;
         &[aria-expanded="true"]{
           &::after{
             background-image: url('/assets/images/arrow-down.svg');
@@ -779,10 +786,12 @@ img{
     display: flex;
     align-items: center;
     position: relative;
+    flex: 1 1 50%;
     &:after{
       content: '';
       background-image: url('/assets/images/lepnina.webp');
       background-size: cover;
+      background-position: center center;
       width: 100%;
       height: 100%;
       position: absolute;
@@ -793,6 +802,8 @@ img{
   &__content{
     padding-top: 10vh;
     padding-left: 5vw;
+    padding-bottom: 156px;
+    flex: 1 1 50%;
   }
   &__title{
     font-weight: 600;
@@ -818,6 +829,65 @@ img{
 .blog{
   padding-top: 114px;
   .grid{
+    .grid-item.wide{
+      width: 100%;
+    }
+    .grid-item{
+      position: relative;
+      .blog-hover{
+        width: 100%;
+        height: auto;
+        position: absolute;
+        overflow: hidden;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background: #8C8C8C;
+        box-shadow: 0px 0px 20px rgba(129, 135, 132, 0.35);
+        border-radius: 5px;
+        display: none;
+        transition: 0.3s;
+        overflow: visible;
+        align-items: center;
+        flex-direction: column;
+        button{
+          background: #FF7475;
+          border-radius: 5px;
+          width: 180px;
+          height: 46px;
+          border: none;
+          margin-bottom: 45px;
+        }
+        *{
+          color: #FFFFFF;
+        }
+        img{
+          width: 100%;
+        }
+        .blog-subtitle{
+          font-weight: 600;
+          font-size: 24px;
+          line-height: 108.3%;
+        }
+        p{
+          font-size: 18px;
+          line-height: 21px;
+          font-weight: 300;
+          padding: 0 36px;
+        }
+      }
+      &:hover .blog-hover{
+        display: flex;
+      }
+    }
+    .blog-content{
+      position: relative;
+    }
+    .blog-short{
+    }
+    
+    .wide{
+    }
     .announcement{
       padding-top: 24px;
       .blog-title{
@@ -853,7 +923,6 @@ img{
     &-item{
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
       img{
         margin-bottom: 24px;
       }
@@ -1097,6 +1166,9 @@ img{
     .calculation__title{
       font-size: 32px;
       line-height: 38px;
+    }
+    .filter{
+      padding: 25px 42px 32px 36px;
     }
   }
 }
@@ -1348,7 +1420,6 @@ img{
         }
       }
       button{
-        max-width: 120px;
         width: 100%;
         height: 30px;
         font-size: 0.8rem;
@@ -1424,6 +1495,12 @@ img{
       img{
         max-width: 100%;
       }
+    }
+    .grid-row{
+      padding: 0;
+    }
+    .grid-col{
+      padding: 0;
     }
     &__item{
     }

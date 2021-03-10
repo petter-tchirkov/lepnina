@@ -101,9 +101,4 @@ $(function () {
 	 });
 });
 
-$('.video .video__video').click(function(){
-  $('.video .video__video:after').css('display', 'none');
-  console.log('huy');
-})
-
 

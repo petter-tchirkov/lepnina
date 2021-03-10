@@ -480,64 +480,71 @@ block content
           button Видеогалерея
   section.blog
     .container(style="padding: 0;")
-      .grid.row
-        .grid-row.col-6
-          .grid-item.wide.announcement
+      .grid.row.flex-column.flex-lg-row
+        .grid-row.col-12.col-lg-6
+          .grid-item.announcement
             .blog-title Блог — все об интерьере
             p.blog-info Декор — это целый мир, в котором так интересно разбираться! От напольных покрытий до лепнины, от красок до ярких обоев. Современный ассортимент товаров для преображения интерьера практически безграничен.
             p.blog-info Изучите новости таких популярных брендов, как Orac Decor, Европласт, Quick-Step, Sherwin Williams. Узнайте, как декорируют интерьер знаменитые дизайнеры. Получите практические советы и рекомендации.
             button Подробнее
           .grid-item.wide
             img(src="/assets/images/blog/4.png", alt="")
-            span Лепнина
-            p.blog-subtitle Обзор стеновой 3D панели Relieffo Firefly
-        .grid-row.masonry.col-6
-          .grid-item.col-12
-            img(src="/assets/images/blog/2.png", alt="")
-            span Напольные покрытия
-            p.blog-subtitle Пять причин выбрать ламинат
-          .grid-item.col-12
-            img(src="/assets/images/blog/3.png", alt="")
-            span Обои
-            p.blog__subtitle Нестандартные способы применения обоев
-          .grid-item.col-12
-            img(src="/assets/images/blog/5.png", alt="")
-            span Краски
-            p.blog-subtitle Этапы покраски межкомнатной двери
-          .grid-item.col-12
-            img(src="/assets/images/blog/6.png", alt="" style="max-height: 338px; height: 100%;")
-            span Напольные покрытия
-            p.blog__subtitle Напольное покрытие на стенах
-
-      //- .blog__grid
-      //-   .blog__column
-      //-     .blog__item
-      //-       .blog__title Блог — все об интерьере
-      //-       p Декор — это целый мир, в котором так интересно разбираться! От напольных покрытий до лепнины, от красок до ярких обоев. Современный ассортимент товаров для преображения интерьера практически безграничен.
-      //-       p Изучите новости таких популярных брендов, как Orac Decor, Европласт, Quick-Step, Sherwin Williams. Узнайте, как декорируют интерьер знаменитые дизайнеры. Получите практические советы и рекомендации.
-      //-       button Подробнее
-      //-     .blog__item
-      //-       img(src="/assets/images/blog/4.png", alt="" style="max-height: 449px; height: 100%;")
-      //-       span Лепнина
-      //-       p.blog__subtitle Обзор стеновой 3D панели Relieffo Firefly
-      //-   .blog__column
-      //-     .blog__item
-      //-       img(src="/assets/images/blog/2.png", alt="")
-      //-       span Напольные покрытия
-      //-       p.blog__subtitle Пять причин выбрать ламинат
-      //-     .blog__item
-      //-       img(src="/assets/images/blog/5.png", alt="" style="max-height: 447px; height: 100%;")
-      //-       span Краски
-      //-       p.blog__subtitle Этапы покраски межкомнатной двери
-      //-   .blog__column
-      //-     .blog__item
-      //-       img(src="/assets/images/blog/3.png", alt="")
-      //-       span Обои
-      //-       p.blog__subtitle Нестандартные способы применения обоев
-      //-     .blog__item
-      //-       img(src="/assets/images/blog/6.png", alt="" style="max-height: 338px; height: 100%;")
-      //-       span Напольные покрытия
-      //-       p.blog__subtitle Напольное покрытие на стенах
+            .blog-content
+              span Лепнина
+              p.blog-subtitle Обзор стеновой 3D панели Relieffo Firefly
+            .blog-hover
+              img(src="/assets/images/blog/4.png", alt="")
+              span Лепнина
+              p.blog-subtitle Обзор стеновой 3D панели Relieffo Firefly
+              p.blog-short Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita magnam perferendis asperiores minima ipsum similique possimus, earum porro esse nisi minus non nihil voluptates quisquam maiores est.
+              button Читать
+        .grid-row.grid-cols.row.col-12.col-lg-6
+          .grid-col.col-12.col-lg-6
+            .grid-item
+              img(src="/assets/images/blog/2.png", alt="")
+              .blog-content
+                span Напольные покрытия
+                p.blog-subtitle Пять причин выбрать ламинат
+              .blog-hover
+                img(src="/assets/images/blog/2.png", alt="")
+                span Лепнина
+                p.blog-subtitle Обзор стеновой 3D панели Relieffo Firefly
+                p.blog-short Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita magnam perferendis asperiores minima ipsum similique possimus, earum porro esse nisi minus non nihil voluptates quisquam maiores est.
+                button Читать
+            .grid-item
+              img(src="/assets/images/blog/5.png", alt="")
+              .blog-content
+                span Краски
+                p.blog-subtitle Этапы покраски межкомнатной двери
+              .blog-hover
+                img(src="/assets/images/blog/5.png", alt="")
+                span Лепнина
+                p.blog-subtitle Обзор стеновой 3D панели Relieffo Firefly
+                p.blog-short Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita magnam perferendis asperiores minima ipsum similique possimus, earum porro esse nisi minus non nihil voluptates quisquam maiores est.
+                button Читать
+          .grid-col.col-12.col-lg-6
+            .grid-item
+              img(src="/assets/images/blog/3.png", alt="")
+              .blog-content
+                span Обои
+                p.blog__subtitle Нестандартные способы применения обоев
+              .blog-hover
+                img(src="/assets/images/blog/3.png", alt="")
+                span Лепнина
+                p.blog-subtitle Обзор стеновой 3D панели Relieffo Firefly
+                p.blog-short Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita magnam perferendis asperiores minima ipsum similique possimus, earum porro esse nisi minus non nihil voluptates quisquam maiores est.
+                button Читать
+            .grid-item
+              img(src="/assets/images/blog/6.png", alt="")
+              .blog-content
+                span Напольные покрытия
+                p.blog__subtitle Напольное покрытие на стенах
+              .blog-hover
+                img(src="/assets/images/blog/6.png", alt="")
+                span Лепнина
+                p.blog-subtitle Обзор стеновой 3D панели Relieffo Firefly
+                p.blog-short Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita magnam perferendis asperiores minima ipsum similique possimus, earum porro esse nisi minus non nihil voluptates quisquam maiores est.
+                button Читать
   section.form
     .container
       .form__title Нужна консультация? Задайте вопрос прямо сейчас!
