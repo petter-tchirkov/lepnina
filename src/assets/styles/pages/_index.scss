@@ -594,6 +594,12 @@ img{
       font-size: 1.125rem;
       line-height: 21px;
       color: #939393;
+      background-image: url('/assets/images/arrow-right.svg');
+      background-repeat: no-repeat;
+      background-position: right center;
+      &:focus {
+        background-image: url('/assets/images/arrow-down.svg');
+      }
     }
     option{
       
