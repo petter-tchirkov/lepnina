@@ -5,18 +5,38 @@ button{
     background: linear-gradient(180deg, #FF7475 0.29%, #E25455 100%) !important;
   }
 }
+img{
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
 .top{
+  &__row{
+    display: flex;
+    justify-content: space-between;
+    li{
+      display: flex;
+      align-items: center; 
+      img{
+        filter: grayscale(100%);
+        &:hover{
+          filter: none;
+        }
+      }
+    }
+  }
   &__brands{
     padding-top: 60px;
     margin-bottom: 34px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     &--title{
       text-align: center;
       margin-bottom: 65px;
       font-weight: normal;
-      font-size: 18px;
+      font-size: 1.125rem;
       line-height: 21px;
       color: #818784;
     }
@@ -33,7 +53,7 @@ button{
   }
   &__title{
     font-weight: 600;
-    font-size: 42px;
+    font-size: 2.6rem;
     line-height: 50px;
     color: #818784;
     text-align: center;
@@ -60,7 +80,7 @@ button{
       padding: 36px 0 0 57px;
     }
     &__title{
-      font-size: 24px;
+      font-size: 1.5rem;
       line-height: 120%;
       color: #fff;
       text-align: left;
@@ -80,7 +100,7 @@ button{
       border: none;
       color: #fff;
       font-weight: 500;
-      font-size: 18px;
+      font-size: 1.125rem;
       line-height: 21px;
       &:hover{
         background: linear-gradient(180deg, #FF7475 0.29%, #E25455 100%) !important;
@@ -101,7 +121,7 @@ button{
       padding: 36px 0 0 57px;
     }
     &__title{
-      font-size: 24px;
+      font-size: 1.5rem;
       line-height: 120%;
       color: #fff;
       text-align: left;
@@ -121,7 +141,7 @@ button{
       border: none;
       color: #fff;
       font-weight: 500;
-      font-size: 18px;
+      font-size: 1.125rem;
       line-height: 21px;
       &:hover{
         background: linear-gradient(180deg, #FF7475 0.29%, #E25455 100%) !important;
@@ -153,7 +173,7 @@ button{
         border: none;
         color: #fff;
         font-weight: 500;
-        font-size: 18px;
+        font-size: 1.125rem;
         line-height: 21px;
         &:hover{
           background: linear-gradient(180deg, #FF7475 0.29%, #E25455 100%) !important;
@@ -190,7 +210,7 @@ button{
     }
     .swiper-pagination{
       color: #939393;
-      font-size: 24px;
+      font-size: 1.5rem;
       line-height: 139%;
       position: relative;
       bottom: auto;
@@ -199,24 +219,24 @@ button{
       text-align-last: left;
       .swiper-pagination-current{
         font-weight: 500;
-        font-size: 24px;
+        font-size: 1.5rem;
         line-height: 139%;
       }
       .swiper-pagination-total{
-        font-size: 20px;
+        font-size: 1.25rem;
         line-height: 139%;
       }
     }
     .swiper-slide{
       display: flex;
       .news__img{
-        height: 300px;
         margin-right: 40px;
+        width: 50%;
       }
       .slider__content{
         .slider-name{
           font-weight: 600;
-          font-size: 24px;
+          font-size: 1.5rem;
           line-height: 120%;
           color: #818784;
           margin-bottom: 20px;
@@ -228,6 +248,9 @@ button{
         .slider-links{
           display: flex;
           align-items: flex-end;
+          *{
+            flex: 1 1 33%;
+          }
           .swiper-buttons{
             position: relative;
             display: flex;
@@ -244,26 +267,30 @@ button{
         p{
           text-align: left;
           font-weight: normal;
-          font-size: 16px;
+          font-size: 1rem;
           line-height: 140%;
           font-family: $light;
           color: #939393;
           max-width: 425px;
           width: 100%;
           margin-bottom: 35px;
+          &:first-of-type{
+            margin-bottom: 0;
+          }
         }
       }
     }
     a{
-      margin-left: 40px;
+      margin-left: 1vw;
       button{
-        width: 158px;
+        max-width: 10rem;
+        width: 100%;
         height: 46px;
         background: #FF7475;
         border-radius: 5px;
         border: none;
         font-weight: 500;
-        font-size: 18px;
+        font-size: 1.125rem;
         line-height: 21px;
         color: #fff;
       }
@@ -284,7 +311,7 @@ button{
   }
   &__title{
     font-weight: 600;
-    font-size: 42px;
+    font-size: 2.6rem;
     line-height: 50px;
     color: #818784;
     grid-column: 1 / 3;
@@ -313,7 +340,7 @@ button{
       width: 45px;
       height: 17px;
       font-weight: 500;
-      font-size: 10px;
+      font-size: 0.625rem;
       line-height: 12px;
       color: #fff;
       display: flex;
@@ -323,14 +350,14 @@ button{
   }
   &__name{
     font-weight: 600;
-    font-size: 32px;
+    font-size: 2rem;
     line-height: 130%;
     color: #818784;
     margin-bottom: 20px;
   }
   &__info{
     font-weight: normal;
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 130%;
     color: #818784;
   }
@@ -355,7 +382,7 @@ button{
       margin-bottom: 26px;
       a{
         font-weight: 500;
-        font-size: 18px;
+        font-size: 1.125rem;
         line-height: 130%;
         color: #818784;
         margin-right: 12px;
@@ -363,14 +390,14 @@ button{
     }
     .stages__title{
       font-weight: 600;
-      font-size: 32px;
+      font-size: 2rem;
       line-height: 130%;
       color: #818784;
       margin-bottom: 22px;
     }
     p{
       font-weight: normal;
-      font-size: 20px;
+      font-size: 1.25rem;
       line-height: 23px;
       color: #939393;
     }
@@ -424,7 +451,7 @@ button{
         .grid-name{
           position: absolute;
           font-weight: 500;
-          font-size: 16px;
+          font-size: 1rem;
           line-height: 19px;
           left: 50%;
           bottom: 5%;
@@ -436,7 +463,7 @@ button{
     }
     &__title{
       font-weight: 600;
-      font-size: 42px;
+      font-size: 2.6rem;
       line-height: 50px;
       color: #818784;
       margin-bottom: 38px;
@@ -454,7 +481,7 @@ button{
       align-items: center;
       span{
         font-weight: 500;
-        font-size: 20px;
+        font-size: 1.25rem;
         line-height: 24px;
       }
       .page-inputs{
@@ -503,7 +530,7 @@ button{
       appearance: none;
       position: relative;
       font-weight: normal;
-      font-size: 18px;
+      font-size: 1.125rem;
       line-height: 21px;
       color: #939393;
       padding-left: 30px;
@@ -523,7 +550,7 @@ button{
   &__most{
     .most__title{
       font-weight: 600;
-      font-size: 26px;
+      font-size: 1.625rem;
       line-height: 130%;
       margin-top: 24px;
       color: #818784;
@@ -543,7 +570,7 @@ button{
   padding: 40px 78px 0 60px;
   &__title{
     font-weight: 600;
-    font-size: 26px;
+    font-size: 1.625rem;
     line-height: 130%;
     color: #818784;
     text-align: center;
@@ -558,18 +585,19 @@ button{
     align-items: center;
     margin-bottom: 26px;
     font-weight: normal;
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 21px;
     color: #939393;
   }
   button{
     background: #FF7475;
     border-radius: 5px;
-    width: 220px;
+    width: 100%;
+    max-width: 220px;
     height: 55px;
     border: none;
     font-weight: 500;
-    font-size: 21.6447px;
+    font-size: 1.25rem;
     line-height: 25px;
     color: #fff;
     display: block;
@@ -583,7 +611,7 @@ button{
   margin-bottom: 120px;
   &__title{
     font-weight: 600;
-    font-size: 42px;
+    font-size: 2.6rem;
     line-height: 50px;
     color: #818784;
     margin-bottom: 34px;
@@ -605,7 +633,7 @@ button{
       display: inline-block;
       cursor: pointer;
       font-weight: 500;
-      font-size: 20px;
+      font-size: 1.25rem;
       line-height: 24px;
       padding: 17px 50px;
       border: 1px solid #939393;
@@ -634,7 +662,7 @@ button{
             justify-content: center;
             align-items: center;
             font-weight: 600;
-            font-size: 40px;
+            font-size: 2.5rem;
             line-height: 48px;
             color: #fff;
             top: 0;
@@ -660,28 +688,41 @@ button{
     display: flex;
   }
   &__video{
-    height: 548px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    &:after{
+      content: '';
+      background-image: url('/assets/images/lepnina.webp');
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
   }
   &__content{
-    padding-top: 156px;
-    padding-left: 75px;
+    padding-top: 10vh;
+    padding-left: 5vw;
   }
   &__title{
     font-weight: 600;
-    font-size: 42px;
+    font-size: 2.6rem;
     line-height: 120%;
     color: #fff;
     margin-bottom: 38px;
     cursor: pointer;
   }
   button{
-    width: 198px;
+    max-width: 198px;
+    width: 100%;
     height: 46px;
     border: none;
     background: #FF7475;
     border-radius: 5px;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 21px;
     color: #fff;
   }
@@ -706,7 +747,7 @@ button{
         margin-bottom: 18px;
       }
       p{
-        font-size: 20px;
+        font-size: 1.25rem;
         line-height: 130%;
         color: #939393;
         &:first-of-type{
@@ -717,14 +758,15 @@ button{
         }
       }
       button{
-        width: 180px;
+        max-width: 180px;
+        width: 100%;
         height: 46px;
         border: none;
         background: #FF7475;
         border-radius: 5px;
         margin-bottom: 48px;
         font-weight: 500;
-        font-size: 18px;
+        font-size: 1.125rem;
         line-height: 21px;
         color: #fff;
       }
@@ -734,7 +776,7 @@ button{
     }
     span{
       font-weight: 500;
-      font-size: 20px;
+      font-size: 1.25rem;
       line-height: 24px;
       color: #FF7475;
       display: block;
@@ -743,7 +785,7 @@ button{
     }
     .blog__subtitle{
       font-family: $bold;
-      font-size: 16px !important;
+      font-size: 1rem !important;
       line-height: 108.3%;
       color: #818784;
       text-align: center;
@@ -753,7 +795,7 @@ button{
   }
   &__title{
     font-weight: 600;
-    font-size: 42px;
+    font-size: 2.6rem;
     line-height: 50px;
     color: #818784;
   }
@@ -763,164 +805,137 @@ button{
   background: url('/assets/images/map.png');
 }
 .form{
-  form{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 24px;
-    grid-row-gap: 28px;
-    grid-template-rows: auto 20px;
-  }
   background: #8C8C8C;
-  padding: 62px 320px;
+  padding-top: 4rem;
   &__title{
-    font-size: 42px;
-    line-height: 50px;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 38px;
     color: #FFFFFF;
     text-align: center;
     margin-bottom: 40px;
   }
+  form{
+    display: flex;
+    flex-wrap: wrap;
+  }
   &__grid{
-    display: grid;
-    grid-column-gap: 24px;
-    input{
+    flex: 1 1 calc(70% - 20px);
+    margin-right: 20px;
+    margin-bottom: 28px;
+    display: flex;
+    .inputs{
+      flex: 1 0 33%;
+      *{
+        height: 3rem;
+        border: 2px solid #FFFFFF;
+        box-sizing: border-box;
+        border-radius: 5px;
+        background-color: transparent;
+        padding-left: 18px;
+        width: calc(100% - 1.5rem);
+        &::placeholder,&::placeholder-shown{
+          color: #fff;
+        }
+      }
+      input:first-child{
+        margin-bottom: 24px;
+      }
+    }
+    #text{
       border: 2px solid #FFFFFF;
       box-sizing: border-box;
       border-radius: 5px;
-      background: transparent;
+      background-color: transparent;
       padding-left: 18px;
+      flex: 1 1 66%;
       &::placeholder{
-        font-size: 16px;
-        line-height: 139%;
         color: #fff;
       }
-    }
-    input[type="text"]{
-      grid-column: 1;
-      width: 290px;
-      height: 48px;
-    }
-    #phone{
-      grid-column: 1;
-      width: 290px;
-      height: 48px;
-      display: grid;
-      align-self: end;
-    }
-    input[type="textarea"]{
-      width: 640px;
-      height: 120px;
-      grid-column: 2;
-      grid-row: 1 / 3;
-    }
-  }
-  &__check{
-    text-align: center;
-    margin-bottom: 36px;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    grid-column: 1 / 3;
-    input{
-      margin-right: 25px;
-    }
-    .container-checkbox {
-      display: block;
-      position: relative;
-      cursor: pointer;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-    }
-
-    /* Hide the browser's default checkbox */
-    .container-checkbox input {
-        position: absolute;
-        opacity: 0;
-        cursor: pointer;
-    }
-
-    /* Create a custom checkbox */
-    .container-checkbox .checkmark {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 25px;
-        width: 25px;
-        background-color: #eee;
-    }
-
-    /* On mouse-over, add a grey background color */
-    .container-checkbox:hover input ~ .checkmark {
-        background-color: #ccc;
-    }
-
-    /* When the checkbox is checked, add a blue background */
-    .container-checkbox input:checked ~ .checkmark {
-        background-color: #2196F3;
-    }
-    .container-checkbox .checkmark:after {
-      content: "";
-      position: absolute;
-      display: none;
-    }
-
-    /* Show the checkmark when checked */
-    .container-checkbox input:checked ~ .checkmark:after {
-        display: block;
-    }
-
-    /* Style the checkmark/indicator */
-    .container-checkbox .checkmark:after {
-        left: 9px;
-        top: 5px;
-        width: 5px;
-        height: 10px;
-        border: solid white;
-        border-width: 0 3px 3px 0;
-        -webkit-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-        transform: rotate(45deg);
-    }
-    label{
-      font-size: 16px;
-      line-height: 139%;
-      color: #fff;
     }
   }
   &__submit{
+    flex: 1 1 30%;
+    margin-bottom: 28px;
     display: grid;
-    margin-bottom: 38px;
-    img{
-      grid-column: 1;
+    grid-template-columns: 50% 1fr;
+    grid-column-gap: 20px;
+    #image{
+      height: 48px;
     }
     #code{
-      grid-column: 2;
       border: 2px solid #FFFFFF;
       box-sizing: border-box;
       border-radius: 5px;
-      width: 127px;
       height: 48px;
-      background: transparent;
+      background-color: transparent;
       padding-left: 18px;
-      display: grid;
-      justify-self: end;
-      &::placeholder{
+      width: 100%;
+      &::placeholder,&::placeholder-shown{
         color: #fff;
       }
     }
-    button{
+    #btn{
       grid-column: 1 / 3;
       background: #FF7474;
       border-radius: 5px;
       border: none;
+      color: #fff;
       font-size: 16px;
       line-height: 139%;
-      color: #fff;
     }
+  }
+  &__check{
+    flex: 1 0 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
   }
 }
 
+@media screen and (max-width: 1280px){
+  .main{
+    .news{
+      .slider__content{
+        .slider-name{
+          font-size: 1rem !important;
+          margin-bottom: 0 !important;
+        }
+        p{
+          font-size: 0.8rem !important;
+          &:first-of-type{
+            margin-bottom: 18px !important;
+          }
+          &:last-of-type{
+            display: none !important;
+          }
+        }
+      }
+    }
+    .discounts__content{
+      background-size: contain !important;
+    }
+  }
+  .blog{
+    &__grid{
+      grid-template-columns: 2fr 1fr 1fr;
+    }
+    &__item{
+      p{
+        font-size: 1rem;
+        line-height: 130%;
+      }
+    }
+  }
+  .video{
+    &__body{
+      padding-bottom: 24px;
+    }
+    &__video{
+
+    }
+  }
+}
 @media screen and (max-width: 768px){
   .container{
     padding: 0 45px;
@@ -967,19 +982,21 @@ button{
             height: 198px;
           }
           p{
-            font-size: 14px;
+            font-size: 0.8rem;
             line-height: 140%;
           }
           .slider-name{
-            font-size: 18px;
+            font-size: 1.125rem;
             line-height: 120%;
           }
           a{
-            margin-left: 20px;
+            margin-left: 0;
           }
           button{
-            width: 120px;
+            max-width: 120px;
+            width: 100%;
             height: 35px;
+            font-size: 1rem;
           }
         }
       }
@@ -991,7 +1008,7 @@ button{
         padding: 38px 0 0 24px;
       }
       &__title{
-        font-size: 18px;
+        font-size: 1.125rem;
         line-height: 120%;
         margin-bottom: 46px;
       }
@@ -1003,7 +1020,7 @@ button{
         padding: 38px 0 0 24px;
       }
       &__title{
-        font-size: 18px;
+        font-size: 1.125rem;
         line-height: 120%;
         margin-bottom: 46px;
       }
@@ -1043,7 +1060,7 @@ button{
       margin-bottom: 12px;
     }
     &__info{
-      font-size: 14px;
+      font-size: 0.8rem;
       line-height: 130%;
     }
   }
@@ -1061,7 +1078,7 @@ button{
         margin-bottom: 8px;
       }
       p{
-        font-size: 14px;
+        font-size: 0.8rem;
         line-height: 16px;
       }
     }
@@ -1113,7 +1130,7 @@ button{
       &__elems{
         grid-template-rows: auto auto 1fr;
         select{
-          font-size: 10px;
+          font-size: 0.625rem;
           line-height: 12px;
           height: 28px;
         }
@@ -1154,20 +1171,21 @@ button{
     .filter{
       padding: 25px 44px 0 32px;
       &__title{
-        font-size: 16px;
+        font-size: 1rem;
         line-height: 130%;
       }
       &__item{
         margin-bottom: 10px;
         span{
-          font-size: 12px;
+          font-size: 0.75rem;
           line-height: 14px;
         }
       }
       button{
-        width: 120px;
+        max-width: 120px;
+        width: 100%;
         height: 30px;
-        font-size: 14px;
+        font-size: 0.8rem;
         line-height: 16px;
       }
     }
@@ -1184,7 +1202,7 @@ button{
       li{
         padding: 8px 30px;
         margin-right: 15px;
-        font-size: 12px;
+        font-size: 0.75rem;
         line-height: 15px;
       }
     }
@@ -1203,6 +1221,9 @@ button{
       max-width: 100%;
       padding: 0;
     }
+    &__body{
+      padding-bottom: 0;
+    }
     &__video{
       max-width: 470px;
       height: auto;
@@ -1219,9 +1240,10 @@ button{
       }
     }
     button{
-      width: 170px;
+      max-width: 170px;
+      width: 100%;
       height: 35px;
-      font-size: 16px;
+      font-size: 1rem;
       line-height: 19px;
     }
   }
@@ -1249,15 +1271,16 @@ button{
       flex-direction: column;
       align-items: center;
       p{
-        font-size: 14px;
+        font-size: 0.8rem;
         line-height: 130%;
         text-align: center;
         margin-bottom: 20px !important;
       }
       button{
-        width: 144px;
+        max-width: 144px;
+        width: 100%;
         height: 35px;
-        font-size: 16px;
+        font-size: 1rem;
         line-height: 19px;
         margin-bottom: 42px;
       }
@@ -1275,44 +1298,27 @@ button{
     background-size: cover;
   }
   .form{
-    padding: 0;
-    padding-top: 36px;
+    padding-top: 37px;
     &__title{
       font-size: 24px;
       line-height: 29px;
+      margin-bottom: 30px;
     }
-    form{
-      grid-template-columns: 1fr;
-      grid-template-rows: auto auto auto;
-      padding: 0 45px;
+    &__grid,&__submit{
+      flex: 1 1 100%;
     }
     &__grid{
-      grid-template-columns: 205px 1fr;
-      input[type="textarea"]{
-        width: auto;
-      }
-      input[type="text"]{
-        width: 205px;
-      }
-      #phone{
-        width: 205px;
-      }
+      margin-right: 0;
+      
     }
     &__submit{
-      margin-bottom: 26px;
-      grid-column: 1;
-      img{
-        grid-column: 1;
-      }
-      #code{
-        grid-column: 2;
-        justify-self: start;
-      }
-      button{
+      grid-template-columns: 93px 1fr 1fr;
+      #btn{
         grid-column: 3;
       }
     }
   }
+
 }
 @media screen and (max-width: 576px){
   .container{
@@ -1320,7 +1326,7 @@ button{
   }
   .main{
     &__title{
-      font-size: 18px;
+      font-size: 1.125rem;
       line-height: 21px;
       text-align: center;
     }
@@ -1372,7 +1378,7 @@ button{
   }
   .materials{
     &__title{
-      font-size: 18px;
+      font-size: 1.125rem;
       line-height: 21px;
       text-align: center;
       margin-bottom: 52px;
@@ -1397,7 +1403,7 @@ button{
       margin-bottom: 12px;
     }
     &__info{
-      font-size: 14px;
+      font-size: 0.8rem;
       line-height: 130%;
     }
   }
@@ -1417,7 +1423,7 @@ button{
     padding-bottom: 0;
     background-color: #fff;
     .calculation__title{
-      font-size: 18px;
+      font-size: 1.125rem;
       line-height: 21px;
       text-align: center;
     }
@@ -1440,7 +1446,7 @@ button{
   }
   .inspire{
     &__title{
-      font-size: 18px;
+      font-size: 1.125rem;
       line-height: 21px;
     }
   }
@@ -1454,7 +1460,7 @@ button{
       flex-direction: column;
       align-items: center;
       .video__title{
-        font-size: 18px;
+        font-size: 1.125rem;
         line-height: 120%;
         text-align: center;
       }
@@ -1475,40 +1481,6 @@ button{
       grid-template-columns: 1fr;
     }
   }
-  .form{
-    padding: 30px 15px;
-    &__title{
-      font-size: 18px;
-      line-height: 21px;
-    }
-    form{
-      padding: 0;
-      grid-column-gap: 0;
-    }
-    &__grid{
-      grid-template-columns: 1fr;
-      grid-row-gap: 18px;
-      input{
-        grid-column: 1 !important;
-        width: 100% !important;
-      }
-    }
-    &__submit{
-      grid-row-gap: 18px;
-      grid-column-gap: 8px;
-      img{
-        grid-column: 1;
-      }
-      #code{
-        grid-column: 2;
-        width: 100% !important;
-      }
-      button{
-        grid-column: 1 / 3;
-        height: 36px;
-      }
-    }
-  }
   .inspire__tabs{
     margin-bottom: 28px;
     display: flex;
@@ -1517,6 +1489,27 @@ button{
     li{
       margin-bottom: 8px;
       
+    }
+  }
+  .form{
+    &__grid{
+      flex-direction: column-reverse;
+      #name,#phone{
+        width: 100%;
+      }
+      #text{
+        height: 120px;
+        flex: auto;
+        margin-bottom: 24px;
+      }
+    }
+    &__submit{
+      grid-template-columns: 1fr;
+      grid-row-gap: 10px;
+      *{
+        width: 100%;
+        grid-column: 1 !important;
+      }
     }
   }
 

@@ -24,8 +24,13 @@ import 'swiper/swiper-bundle.css';
 
 const swiper = new Swiper('.swiper-container', {
   // Optional parameters
-  direction: 'horizontal',
   loop: true,
+  fadeEffect: { crossFade: true },
+  autoplay: {
+     delay: 2500,
+     disableOnInteraction: true,
+  },
+  effect: "fade",
 
   // If we need pagination
   pagination: {
@@ -94,4 +99,7 @@ $(function () {
 	 });
 });
 
-
+$('.video .video__video').click(function(){
+  $('.video .video__video:after').css('display', 'none');
+  console.log('huy');
+})
