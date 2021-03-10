@@ -80,26 +80,26 @@
     background-image: linear-gradient(to bottom, lighten($input-thumb-color,60%) 0, $input-thumb-color 100%); /* W3C */
   }
   
-  input[type=range]::-moz-range-track {
+  input[type="range"]::-moz-range-track {
     position: relative;
     z-index: -1;
     background-color: rgba(0, 0, 0, 1);
     border: 0;
   }
-  input[type=range]::-moz-runnable-track {
+  input[type="range"]::-moz-runnable-track {
     position: relative;
     z-index: -1;
     background-color: rgba(0, 0, 0, 1);
     border: 0;
   }
   
-  input[type=range]:last-of-type::-moz-range-track {
+  input[type="range"]:last-of-type::-moz-range-track {
     -moz-appearance: none;
     background: none transparent;
     border: 0;
   } 
   
-  input[type=range]::-moz-focus-outer {
+  input[type="range"]::-moz-focus-outer {
     border: 0;
   }
 }

@@ -41,7 +41,6 @@ block content
     .container
       h2.main__title Интернет-магазин отделочных материалов от ведущих брендов
       .main-grid
-        .main-column
           .main-column__item.news
             .news__content
               .swiper-container
@@ -87,20 +86,15 @@ block content
                           .swiper-button-next
                         a(href="/")
                           button В каталог
-                // If we need pagination
-                // If we need navigation buttons
-                // If we need scrollbar
-          .main-row
-            .main-column__item.catalog
-              .catalog__content
-                .catalog__title Каталоги от известных брендов
-                a(href="/").catalog__download Скачать
-                  img(src="/assets/images/download.svg", alt="")
-            .main-column__item.cowork
-              .cowork__content
-                .cowork__title Каталоги от известных брендов
-                a(href="/").cowork__more Узнать подробнее
-        .main-column
+          .main-column__item.catalog
+            .catalog__content
+              .catalog__title Каталоги от известных брендов
+              a(href="/").catalog__download Скачать
+                img(src="/assets/images/download.svg", alt="")
+          .main-column__item.cowork
+            .cowork__content
+              .cowork__title Каталоги от известных брендов
+              a(href="/").cowork__more Узнать подробнее
           .main-column__item.discounts
             .discounts__content
               a(href="/").discounts__more Узнать подробнее
@@ -138,40 +132,39 @@ block content
             img(src="/assets/images/materials/color.png", alt="")
           .materials__name Краски
           .materials__info Матовые, глянцевые и перламутровые краски разных цветов. В ассортименте представлены краски таких известных производителей как Sherwin Williams, Dulux и Sikkens.
-  section.stages
-    .container
-      .stages__slider
-        .stages-container
-          .stages-wrapper
-            .stages-slide
-              .stages__top
-                img(src="/assets/images/lock.svg", alt="")
-                a(href="/") Подробнее 
-                  img(src="/assets/images/more.svg", alt="")
-              .stages__title Оплата
-              p Заказать лепнину, напольные покрытия, краску или обои можно в офисе у менеджеров компании, либо отправив заявку через сайт или по телефону.
-            .stages-slide
-              .stages__top
-                img(src="/assets/images/truck.svg", alt="")
-                a(href="/") Подробнее 
-                  img(src="/assets/images/more.svg", alt="")
-              .stages__title Доставка
-              p Мы гарантируем бережное отношение к товару во время доставки. После получения и обработки заказа, товар будет доставлен в кратчайший срок.
-            .stages-slide
-              .stages__top
-                img(src="/assets/images/lock.svg", alt="")
-                a(href="/") Подробнее 
-                  img(src="/assets/images/more.svg", alt="")
-              .swiper__title Оплата
-              p Заказать лепнину, напольные покрытия, краску или обои можно в офисе у менеджеров компании, либо отправив заявку через сайт или по телефону.
-            .stages-slide
-              .stages__top
-                img(src="/assets/images/truck.svg", alt="")
-                a(href="/") Подробнее 
-                  img(src="/assets/images/more.svg", alt="")
-              .stages__title Доставка
-              p Мы гарантируем бережное отношение к товару во время доставки. После получения и обработки заказа, товар будет доставлен в кратчайший срок.
-          .stages-pagination
+  //- section.stages
+  //-   .container
+  //-     .stages-container
+  //-       .stages-wrapper
+  //-         .stages-slide
+  //-           .stages__top
+  //-             img(src="/assets/images/lock.svg", alt="")
+  //-             a(href="/") Подробнее 
+  //-               img(src="/assets/images/more.svg", alt="")
+  //-           .stages__title Оплата
+  //-           p Заказать лепнину, напольные покрытия, краску или обои можно в офисе у менеджеров компании, либо отправив заявку через сайт или по телефону.
+  //-         .stages-slide
+  //-           .stages__top
+  //-             img(src="/assets/images/truck.svg", alt="")
+  //-             a(href="/") Подробнее 
+  //-               img(src="/assets/images/more.svg", alt="")
+  //-           .stages__title Доставка
+  //-           p Мы гарантируем бережное отношение к товару во время доставки. После получения и обработки заказа, товар будет доставлен в кратчайший срок.
+  //-         .stages-slide
+  //-           .stages__top
+  //-             img(src="/assets/images/lock.svg", alt="")
+  //-             a(href="/") Подробнее 
+  //-               img(src="/assets/images/more.svg", alt="")
+  //-           .stages__title Оплата
+  //-           p Заказать лепнину, напольные покрытия, краску или обои можно в офисе у менеджеров компании, либо отправив заявку через сайт или по телефону.
+  //-         .stages-slide
+  //-           .stages__top
+  //-             img(src="/assets/images/truck.svg", alt="")
+  //-             a(href="/") Подробнее 
+  //-               img(src="/assets/images/more.svg", alt="")
+  //-           .stages__title Доставка
+  //-           p Мы гарантируем бережное отношение к товару во время доставки. После получения и обработки заказа, товар будет доставлен в кратчайший срок.
+  //-       .stages-pagination
   section.calc
     .container
       .calc__grid
@@ -343,6 +336,24 @@ block content
             img(src="/assets/images/blog/6.png", alt="")
             span Напольные покрытия
             p.blog__subtitle Напольное покрытие на стенах
+  section.form
+    .form__title Нужна консультация? Задайте вопрос прямо сейчас!
+    form
+      .form__grid
+        input(type="text" placeholder="Имя")
+        input#phone(type="text" placeholder="+7 (___) ___-__-__")
+        input(type="textarea" placeholder="Вопрос или предмет заявки")
+      .form__submit
+        img(src="/assets/images/code.png", alt="")
+        input#code(type="text" placeholder="Введите код")
+        button Отправить сообщение
+      .form__check
+        label(for="name").container-checkbox  Я даю согласие на обработку моих персональных данных
+        input(type="checkbox" name="check")
+        span.checkmark
+    
+  section.map
+
 
     
           
