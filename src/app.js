@@ -2,6 +2,8 @@
 
 // Styles
 import 'styles/_app.scss';
+import bootstrap from 'bootstrap'
+
 
 $(function() {
   console.log('Ready!');
@@ -103,3 +105,5 @@ $('.video .video__video').click(function(){
   $('.video .video__video:after').css('display', 'none');
   console.log('huy');
 })
+
+

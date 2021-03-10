@@ -190,31 +190,41 @@ block content
                 input(value='500' min='0' max='15000' step='10' type='range')
                 input(value='50000' min='0' max='15000' step='10' type='range')
             .params__elems
-              select(name="elem")
-                option(value="" default) Элемент декора
-                option(value="") Карнизы
-                option(value="") Молдинги
-                option(value="") Плинтусы
-                option(value="") Обрамление дверей
-                option(value="") Обрамление арок
-                option(value="") Полуколонны 
-              select(name="brand")
-                option(value="" default) Бренд
-                option(value="") Arbition
-                option(value="") ART
-                option(value="") Artiva
-                option(value="") Artpole
-                option(value="") ARXAT
-                option(value="") Cosca
-              select(name="state")
-                option(value="" default) Страна производства
-                option(value="") Бельгия
-                option(value="") Китай
-                option(value="") Польша
-                option(value="") Россия
-                option(value="") США
-                option(value="") Украина
-                option(value="") Южная Корея
+              .dropdown
+                button#dropdownMenuButton.btn.text-left.btn-light.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                  | Высота, мм
+                .dropdown-menu(aria-labelledby='dropdownMenuButton')
+                  a.dropdown-item(href='#') Элемент декора
+                  a.dropdown-item(href='#') Карнизы
+                  a.dropdown-item(href='#') Молдинги
+                  a.dropdown-item(href='#') Плинтусы
+                  a.dropdown-item(href='#') Обрамление дверей
+                  a.dropdown-item(href='#') Обрамление арок
+                  a.dropdown-item(href='#') Полуколонны
+              .dropdown
+                button#dropdownMenuButton.btn.text-left.btn-light.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                  | Высота, мм
+                .dropdown-menu(aria-labelledby='dropdownMenuButton')
+                  a.dropdown-item(href='#') Бренд
+                  a.dropdown-item(href='#') Arbition
+                  a.dropdown-item(href='#') ART
+                  a.dropdown-item(href='#') Artiva
+                  a.dropdown-item(href='#') Artpole
+                  a.dropdown-item(href='#') Обрамление арок
+                  a.dropdown-item(href='#') ARXAT
+                  a.dropdown-item(href='#') Cosca
+              .dropdown
+                button#dropdownMenuButton.btn.text-left.btn-light.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                  | Высота, мм
+                .dropdown-menu(aria-labelledby='dropdownMenuButton')
+                  a.dropdown-item(href='#') Страна производства
+                  a.dropdown-item(href='#') Бельгия
+                  a.dropdown-item(href='#') Китай
+                  a.dropdown-item(href='#') Польша
+                  a.dropdown-item(href='#') Россия
+                  a.dropdown-item(href='#') США
+                  a.dropdown-item(href='#') Украина
+                  a.dropdown-item(href='#') Южная Корея
             .params__most
               .most__title Чаще всего ищут:
               .most__grid
@@ -230,44 +240,174 @@ block content
             .filter__title Фильтр
             .filter__body
               .filter__item
-                select
-                  option(value="") Длина, мм 
+                .dropdown
+                  button#dropdownMenuButton.btn.text-left.btn-light.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                    | Длина, мм
+                  .dropdown-menu(aria-labelledby='dropdownMenuButton')
+                    a.dropdown-item(href='#') Длина, мм
+                    a.dropdown-item(href='#') Длина, мм
+                    a.dropdown-item(href='#') Длина, мм
+                    a.dropdown-item(href='#') Длина, мм
+                    a.dropdown-item(href='#') Длина, мм
+                    a.dropdown-item(href='#') Длина, мм
+                    a.dropdown-item(href='#') Длина, мм
+                    a.dropdown-item(href='#') Длина, мм
               .filter__item
-                select
-                  option(value="") Высота, мм
+                .dropdown
+                  button#dropdownMenuButton.btn.text-left.btn-light.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                    | Высота, мм
+                  .dropdown-menu(aria-labelledby='dropdownMenuButton')
+                    a.dropdown-item(href='#') Высота, мм
+                    a.dropdown-item(href='#') Высота, мм
+                    a.dropdown-item(href='#') Высота, мм
+                    a.dropdown-item(href='#') Высота, мм
+                    a.dropdown-item(href='#') Высота, мм
+                    a.dropdown-item(href='#') Высота, мм
+                    a.dropdown-item(href='#') Высота, мм
+                    a.dropdown-item(href='#') Высота, мм
               .filter__item
-                select
-                  option(value="") Ширина, мм
+                .dropdown
+                  button#dropdownMenuButton.btn.text-left.btn-light.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                    | Ширина, мм
+                  .dropdown-menu(aria-labelledby='dropdownMenuButton')
+                    a.dropdown-item(href='#') Ширина, мм
+                    a.dropdown-item(href='#') Ширина, мм
+                    a.dropdown-item(href='#') Ширина, мм
+                    a.dropdown-item(href='#') Ширина, мм
+                    a.dropdown-item(href='#') Ширина, мм
+                    a.dropdown-item(href='#') Ширина, мм
+                    a.dropdown-item(href='#') Ширина, мм
+                    a.dropdown-item(href='#') Ширина, мм
               .filter__item
-                select
-                  option(value="") Материал
+                .dropdown
+                  button#dropdownMenuButton.btn.text-left.btn-light.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                    | Материал
+                  .dropdown-menu(aria-labelledby='dropdownMenuButton')
+                    a.dropdown-item(href='#') Материал
+                    a.dropdown-item(href='#') Материал
+                    a.dropdown-item(href='#') Материал
+                    a.dropdown-item(href='#') Материал
+                    a.dropdown-item(href='#') Материал
+                    a.dropdown-item(href='#') Материал
+                    a.dropdown-item(href='#') Материал
+                    a.dropdown-item(href='#') Материал
               .filter__item
-                select
-                  option(value="") Рельеф
+                .dropdown
+                  button#dropdownMenuButton.btn.text-left.btn-light.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                    | Рельеф
+                  .dropdown-menu(aria-labelledby='dropdownMenuButton')
+                    a.dropdown-item(href='#') Рельеф
+                    a.dropdown-item(href='#') Рельеф
+                    a.dropdown-item(href='#') Рельеф
+                    a.dropdown-item(href='#') Рельеф
+                    a.dropdown-item(href='#') Рельеф
+                    a.dropdown-item(href='#') Рельеф
+                    a.dropdown-item(href='#') Рельеф
+                    a.dropdown-item(href='#') Рельеф
               .filter__item
-                select
-                  option(value="") Гибкое исполнение 
+                .dropdown
+                  button#dropdownMenuButton.btn.text-left.btn-light.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                    | Гибкое исполнение
+                  .dropdown-menu(aria-labelledby='dropdownMenuButton')
+                    a.dropdown-item(href='#') Гибкое исполнение
+                    a.dropdown-item(href='#') Гибкое исполнение
+                    a.dropdown-item(href='#') Гибкое исполнение
+                    a.dropdown-item(href='#') Гибкое исполнение
+                    a.dropdown-item(href='#') Гибкое исполнение
+                    a.dropdown-item(href='#') Гибкое исполнение
+                    a.dropdown-item(href='#') Гибкое исполнение
+                    a.dropdown-item(href='#') Гибкое исполнение 
               .filter__item
-                select
-                  option(value="") Дизайн
+                .dropdown
+                  button#dropdownMenuButton.btn.text-left.btn-light.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                    | Дизайн
+                  .dropdown-menu(aria-labelledby='dropdownMenuButton')
+                    a.dropdown-item(href='#') Дизайн
+                    a.dropdown-item(href='#') Дизайн
+                    a.dropdown-item(href='#') Дизайн
+                    a.dropdown-item(href='#') Дизайн
+                    a.dropdown-item(href='#') Дизайн
+                    a.dropdown-item(href='#') Дизайн
+                    a.dropdown-item(href='#') Дизайн
+                    a.dropdown-item(href='#') Дизайн 
               .filter__item
-                select
-                  option(value="") Диаметр, мм
+                .dropdown
+                  button#dropdownMenuButton.btn.text-left.btn-light.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                    | Диаметр, мм
+                  .dropdown-menu(aria-labelledby='dropdownMenuButton')
+                    a.dropdown-item(href='#') Диаметр, мм
+                    a.dropdown-item(href='#') Диаметр, мм
+                    a.dropdown-item(href='#') Диаметр, мм
+                    a.dropdown-item(href='#') Диаметр, мм
+                    a.dropdown-item(href='#') Диаметр, мм
+                    a.dropdown-item(href='#') Диаметр, мм
+                    a.dropdown-item(href='#') Диаметр, мм
+                    a.dropdown-item(href='#') Диаметр, мм
               .filter__item
-                select
-                  option(value="") Скрытое освещение 
+                .dropdown
+                  button#dropdownMenuButton.btn.text-left.btn-light.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                    | Скрытое освещение
+                  .dropdown-menu(aria-labelledby='dropdownMenuButton')
+                    a.dropdown-item(href='#') Скрытое освещение
+                    a.dropdown-item(href='#') Скрытое освещение
+                    a.dropdown-item(href='#') Скрытое освещение
+                    a.dropdown-item(href='#') Скрытое освещение
+                    a.dropdown-item(href='#') Скрытое освещение
+                    a.dropdown-item(href='#') Скрытое освещение
+                    a.dropdown-item(href='#') Скрытое освещение
+                    a.dropdown-item(href='#') Скрытое освещение
               .filter__item
-                select
-                  option(value="") Тип карниза 
+                .dropdown
+                  button#dropdownMenuButton.btn.text-left.btn-light.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                    | Тип карниза
+                  .dropdown-menu(aria-labelledby='dropdownMenuButton')
+                    a.dropdown-item(href='#') Тип карниза
+                    a.dropdown-item(href='#') Тип карниза
+                    a.dropdown-item(href='#') Тип карниза
+                    a.dropdown-item(href='#') Тип карниза
+                    a.dropdown-item(href='#') Тип карниза
+                    a.dropdown-item(href='#') Тип карниза
+                    a.dropdown-item(href='#') Тип карниза
+                    a.dropdown-item(href='#') Тип карниза
               .filter__item
-                select
-                  option(value="") Оттенок
+                .dropdown
+                  button#dropdownMenuButton.btn.text-left.btn-light.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                    | Оттенок
+                  .dropdown-menu(aria-labelledby='dropdownMenuButton')
+                    a.dropdown-item(href='#') Оттенок
+                    a.dropdown-item(href='#') Оттенок
+                    a.dropdown-item(href='#') Оттенок
+                    a.dropdown-item(href='#') Оттенок
+                    a.dropdown-item(href='#') Оттенок
+                    a.dropdown-item(href='#') Оттенок
+                    a.dropdown-item(href='#') Оттенок
+                    a.dropdown-item(href='#') Оттенок
               .filter__item
-                select
-                  option(value="") Тип молдинга 
+                .dropdown
+                  button#dropdownMenuButton.btn.text-left.btn-light.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                    | Тип молдинга
+                  .dropdown-menu(aria-labelledby='dropdownMenuButton')
+                    a.dropdown-item(href='#') Тип молдинга
+                    a.dropdown-item(href='#') Тип молдинга
+                    a.dropdown-item(href='#') Тип молдинга
+                    a.dropdown-item(href='#') Тип молдинга
+                    a.dropdown-item(href='#') Тип молдинга
+                    a.dropdown-item(href='#') Тип молдинга
+                    a.dropdown-item(href='#') Тип молдинга
+                    a.dropdown-item(href='#') Тип молдинга
               .filter__item
-                select
-                  option(value="") Форма 
+                .dropdown
+                  button#dropdownMenuButton.btn.text-left.btn-light.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                    | Форма
+                  .dropdown-menu(aria-labelledby='dropdownMenuButton')
+                    a.dropdown-item(href='#') Форма
+                    a.dropdown-item(href='#') Форма
+                    a.dropdown-item(href='#') Форма
+                    a.dropdown-item(href='#') Форма
+                    a.dropdown-item(href='#') Форма
+                    a.dropdown-item(href='#') Форма
+                    a.dropdown-item(href='#') Форма
+                    a.dropdown-item(href='#') Форма
             button.filter__btn Подобрать
   section.inspire
     .container
@@ -339,36 +479,65 @@ block content
           .video__title Подарите интерьеру новое настроение вместе с Lepnina.Top
           button Видеогалерея
   section.blog
-    .container
-      .blog__grid
-        .blog__column
-          .blog__item
-            .blog__title Блог — все об интерьере
-            p Декор — это целый мир, в котором так интересно разбираться! От напольных покрытий до лепнины, от красок до ярких обоев. Современный ассортимент товаров для преображения интерьера практически безграничен.
-            p Изучите новости таких популярных брендов, как Orac Decor, Европласт, Quick-Step, Sherwin Williams. Узнайте, как декорируют интерьер знаменитые дизайнеры. Получите практические советы и рекомендации.
+    .container(style="padding: 0;")
+      .grid.row
+        .grid-row.col-6
+          .grid-item.wide.announcement
+            .blog-title Блог — все об интерьере
+            p.blog-info Декор — это целый мир, в котором так интересно разбираться! От напольных покрытий до лепнины, от красок до ярких обоев. Современный ассортимент товаров для преображения интерьера практически безграничен.
+            p.blog-info Изучите новости таких популярных брендов, как Orac Decor, Европласт, Quick-Step, Sherwin Williams. Узнайте, как декорируют интерьер знаменитые дизайнеры. Получите практические советы и рекомендации.
             button Подробнее
-          .blog__item
-            img(src="/assets/images/blog/4.png", alt="" style="max-height: 449px; height: 100%;")
+          .grid-item.wide
+            img(src="/assets/images/blog/4.png", alt="")
             span Лепнина
-            p.blog__subtitle Обзор стеновой 3D панели Relieffo Firefly
-        .blog__column
-          .blog__item
+            p.blog-subtitle Обзор стеновой 3D панели Relieffo Firefly
+        .grid-row.masonry.col-6
+          .grid-item.col-12
             img(src="/assets/images/blog/2.png", alt="")
             span Напольные покрытия
-            p.blog__subtitle Пять причин выбрать ламинат
-          .blog__item
-            img(src="/assets/images/blog/5.png", alt="" style="max-height: 447px; height: 100%;")
-            span Краски
-            p.blog__subtitle Этапы покраски межкомнатной двери
-        .blog__column
-          .blog__item
+            p.blog-subtitle Пять причин выбрать ламинат
+          .grid-item.col-12
             img(src="/assets/images/blog/3.png", alt="")
             span Обои
             p.blog__subtitle Нестандартные способы применения обоев
-          .blog__item
+          .grid-item.col-12
+            img(src="/assets/images/blog/5.png", alt="")
+            span Краски
+            p.blog-subtitle Этапы покраски межкомнатной двери
+          .grid-item.col-12
             img(src="/assets/images/blog/6.png", alt="" style="max-height: 338px; height: 100%;")
             span Напольные покрытия
             p.blog__subtitle Напольное покрытие на стенах
+
+      //- .blog__grid
+      //-   .blog__column
+      //-     .blog__item
+      //-       .blog__title Блог — все об интерьере
+      //-       p Декор — это целый мир, в котором так интересно разбираться! От напольных покрытий до лепнины, от красок до ярких обоев. Современный ассортимент товаров для преображения интерьера практически безграничен.
+      //-       p Изучите новости таких популярных брендов, как Orac Decor, Европласт, Quick-Step, Sherwin Williams. Узнайте, как декорируют интерьер знаменитые дизайнеры. Получите практические советы и рекомендации.
+      //-       button Подробнее
+      //-     .blog__item
+      //-       img(src="/assets/images/blog/4.png", alt="" style="max-height: 449px; height: 100%;")
+      //-       span Лепнина
+      //-       p.blog__subtitle Обзор стеновой 3D панели Relieffo Firefly
+      //-   .blog__column
+      //-     .blog__item
+      //-       img(src="/assets/images/blog/2.png", alt="")
+      //-       span Напольные покрытия
+      //-       p.blog__subtitle Пять причин выбрать ламинат
+      //-     .blog__item
+      //-       img(src="/assets/images/blog/5.png", alt="" style="max-height: 447px; height: 100%;")
+      //-       span Краски
+      //-       p.blog__subtitle Этапы покраски межкомнатной двери
+      //-   .blog__column
+      //-     .blog__item
+      //-       img(src="/assets/images/blog/3.png", alt="")
+      //-       span Обои
+      //-       p.blog__subtitle Нестандартные способы применения обоев
+      //-     .blog__item
+      //-       img(src="/assets/images/blog/6.png", alt="" style="max-height: 338px; height: 100%;")
+      //-       span Напольные покрытия
+      //-       p.blog__subtitle Напольное покрытие на стенах
   section.form
     .container
       .form__title Нужна консультация? Задайте вопрос прямо сейчас!

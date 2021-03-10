@@ -32,6 +32,12 @@ img{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    li{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex: 1 1 20%;
+    }
     &--title{
       text-align: center;
       margin-bottom: 65px;
@@ -366,8 +372,11 @@ img{
 .stages{
   margin-bottom: 114px;
   &-wrapper{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 116px;
     justify-content: space-between;
+    padding: 0 112px; 
   }
   &__slider{
     padding: 0 110px;
@@ -376,6 +385,10 @@ img{
   .stages-slide{
     height: 330px;
     padding: 48px 64px 64px;
+    background: linear-gradient(313.73deg, #F8F8F8 5.49%, #FCFCFC 92.65%);
+    border: 1px solid #F1F1F1;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 20px rgba(222, 222, 222, 0.25);
     .stages__top{
       display: flex;
       justify-content: space-between;
@@ -522,25 +535,53 @@ img{
   }
   &__elems{
     display: grid;
-    select{
-      background: #FFFFFF;
-      border: 1.20248px solid #F1F6F7;
-      box-sizing: border-box;
-      border-radius: 6.01242px;
-      height: 52px;
-      appearance: none;
-      position: relative;
-      font-weight: normal;
-      font-size: 1.125rem;
-      line-height: 21px;
-      color: #939393;
-      padding-left: 30px;
-      margin-bottom: 20px;
-      background-image: url('/assets/images/arrow-right.svg');
-      background-repeat: no-repeat;
-      background-position: right center;
-      &:focus {
-        background-image: url('/assets/images/arrow-down.svg');
+    .dropdown{
+      width: 100%;
+      &-menu{
+        width: 100%;
+        border-radius: 5px;
+      }
+      &-item{
+        font-size: 18px;
+        line-height: 21px;
+        color: #939393;
+        padding: 14px 40px;
+      }
+      .show>.btn-secondary.dropdown-toggle{
+        color: #939393 !important;
+      }
+      button{
+        width: 100%;
+        background: #fff !important;
+        font-size: 18px;
+        line-height: 21px;
+        color: #939393;
+        padding: 14px 30px;
+        left: 0;
+        position: relative;
+        margin-bottom: 20px;
+        border-radius: 6.01242px;
+        border: 1.20248px solid #F1F6F7;
+        &[aria-expanded="true"]{
+          &::after{
+            background-image: url('/assets/images/arrow-down.svg');
+          }
+        }
+        &::after{
+          content: '';
+          position: absolute;
+          background-image: url('/assets/images/arrow-right.svg');
+          background-repeat: no-repeat;
+        background-position: right center;
+        top: 9px;
+        right: 0;
+        width: 30px;
+        height: 30px;
+        border: none;
+          &:focus {
+            
+          }
+        }
       }
     }
   }
@@ -588,26 +629,55 @@ img{
     margin-bottom: 26px;
     font-weight: normal;
     color: #939393;
-    select{
-      appearance: none;
-      border: none;
-      flex: 1 1 auto;
-      height: 100%;
-      font-size: 1.125rem;
-      line-height: 21px;
-      color: #939393;
-      background-image: url('/assets/images/arrow-right.svg');
-      background-repeat: no-repeat;
-      background-position: right center;
-      &:focus {
-        background-image: url('/assets/images/arrow-down.svg');
+    .dropdown{
+      width: 100%;
+      &-menu{
+        width: 100%;
+        border-radius: 5px;
+      }
+      &-item{
+        font-size: 18px;
+        line-height: 21px;
+        color: #939393;
+        padding: 14px 40px;
+      }
+      .show>.btn-secondary.dropdown-toggle{
+        color: #939393 !important;
+      }
+      button{
+        width: 100%;
+        background: #fff !important;
+        font-size: 18px;
+        line-height: 21px;
+        color: #939393;
+        padding: 13px 0;
+        border: none;
+        left: 0;
+        position: relative;
+        &[aria-expanded="true"]{
+          &::after{
+            background-image: url('/assets/images/arrow-down.svg');
+          }
+        }
+        &::after{
+          content: '';
+          position: absolute;
+          background-image: url('/assets/images/arrow-right.svg');
+          background-repeat: no-repeat;
+        background-position: right center;
+        top: 9px;
+        right: 0;
+        width: 30px;
+        height: 30px;
+        border: none;
+          &:focus {
+            
+          }
+        }
       }
     }
-    option{
-      
-    }
   }
-  button{
+  &__btn{
     background: #FF7475;
     border-radius: 5px;
     width: 100%;
@@ -747,6 +817,72 @@ img{
 }
 .blog{
   padding-top: 114px;
+  .grid{
+    .announcement{
+      padding-top: 24px;
+      .blog-title{
+        font-size: 42px;
+        line-height: 50px;
+        color: #818784;
+        font-weight: 600;
+        margin-bottom: 28px;
+      }
+      .blog-info{
+        font-size: 20px;
+        line-height: 130%;
+        color: #818784;
+        margin-bottom: 62px;
+        text-align: left;
+        &:first-of-type{
+          margin-bottom: 34px;
+        }
+      }
+      button{
+        width: 179px;
+        height: 46px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        color: #FFFFFF;
+        background: #FF7475;
+        border-radius: 5px;
+        border: none;
+        margin-bottom: 70px;
+      }
+    }
+    &-item{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      img{
+        margin-bottom: 24px;
+      }
+      span{
+        display: block;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        color: #FF7475;
+        text-align: center;
+        margin-bottom: 12px;
+      }
+      p{
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 108.3%;
+        color: #818784;
+        text-align: center;
+        margin-bottom: 44px;
+      }
+    }
+    .masonry{
+      columns: 2;
+      column-gap: 10px;
+      .grid-item{
+        overflow: hidden;
+      }
+    }
+  }
   &__grid{
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
@@ -947,10 +1083,14 @@ img{
   }
   .video{
     &__body{
-      padding-bottom: 24px;
     }
-    &__video{
-
+    &__title{
+      font-size: 32px;
+      line-height: 120%;
+      margin-bottom: 34px;
+    }
+    &__content{
+      padding-bottom: 93px;
     }
   }
   .calc{
