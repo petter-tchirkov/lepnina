@@ -436,17 +436,17 @@ img{
       grid-template-columns: 1fr 1fr;
       grid-gap: 28px;
       .grid__item{
-        border: 1.20248px solid #E8E8E8;
+        border: none;
         position: relative;
         cursor: pointer;
-        transition: 0.3s;
-        &:hover{
-          border: 1.20248px solid #FF7475;
-          box-shadow: 0px 0px 12.0248px #FF7475;
-        }
         img{
           width: 100%;
           max-width: 100%;
+          transition: 0.3s;
+          &:hover{
+            border: 1.20248px solid #FF7475;
+            box-shadow: 0px 0px 12.0248px #FF7475;
+          }
         }
         .grid-name{
           position: absolute;
@@ -535,15 +535,11 @@ img{
       color: #939393;
       padding-left: 30px;
       margin-bottom: 20px;
-      &::after{
-        position: absolute;
-        top: 0;
-        right: 0;
-        display: block;
-        content: '';
-        background-image: url('/assets/images/arrow-right.svg');
-        width: 30px;
-        height: 30px;
+      background-image: url('/assets/images/arrow-right.svg');
+      background-repeat: no-repeat;
+      background-position: right center;
+      &:focus {
+        background-image: url('/assets/images/arrow-down.svg');
       }
     }
   }
@@ -560,8 +556,12 @@ img{
       display: flex;
       flex-wrap: wrap;
       span{
-        flex: 1 1 50%;
+        flex: 1 1 auto;
         cursor: pointer;
+        font-size: 20px;
+        line-height: 24px;
+        color: #939393;
+        margin-bottom: 20px;
       }
     }
   }
@@ -585,14 +585,15 @@ img{
     align-items: center;
     margin-bottom: 26px;
     font-weight: normal;
-    font-size: 1.125rem;
-    line-height: 21px;
     color: #939393;
     select{
       appearance: none;
       border: none;
       flex: 1 1 auto;
       height: 100%;
+      font-size: 1.125rem;
+      line-height: 21px;
+      color: #939393;
     }
     option{
       
@@ -752,7 +753,7 @@ img{
   &__item{
     &:first-of-type{
       .blog__title{
-        margin-top: 20px;
+        margin-top: 17px;
         margin-bottom: 18px;
       }
       p{
@@ -773,7 +774,7 @@ img{
         border: none;
         background: #FF7475;
         border-radius: 5px;
-        margin-bottom: 48px;
+        margin-bottom: 44px;
         font-weight: 500;
         font-size: 1.125rem;
         line-height: 21px;

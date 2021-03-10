@@ -53,6 +53,7 @@
     background: #fff;
     border: 4.80994px solid #FF7475;
     top: -16px;
+    box-shadow: 0px 0px 12.0248px rgba(70, 70, 70, 0.25);
   }
   
   input[type="range"]::-moz-range-thumb {
@@ -65,6 +66,7 @@
     border: none;
     top: -16px;
     border-radius: 50%;
+    box-shadow: 0px 0px 12.0248px rgba(70, 70, 70, 0.25);
     background-image: linear-gradient(to bottom, lighten($input-thumb-color,60%) 0, $input-thumb-color 100%); /* W3C */
   }
 
@@ -75,6 +77,7 @@
     -ms-appearance: none;
     width: $input-height;
     height: $input-height;
+    box-shadow: 0px 0px 12.0248px rgba(70, 70, 70, 0.25);
     top: -16px;
     border-radius: 50%;
     border: 0;
