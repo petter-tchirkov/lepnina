@@ -588,6 +588,15 @@ img{
     font-size: 1.125rem;
     line-height: 21px;
     color: #939393;
+    select{
+      appearance: none;
+      border: none;
+      flex: 1 1 auto;
+      height: 100%;
+    }
+    option{
+      
+    }
   }
   button{
     background: #FF7475;
@@ -1176,7 +1185,10 @@ img{
       }
       &__item{
         margin-bottom: 10px;
-        span{
+        select{
+          appearance: none;
+        }
+        option{
           font-size: 0.75rem;
           line-height: 14px;
         }
