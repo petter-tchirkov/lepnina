@@ -111,17 +111,17 @@ block content
           .materials__img
             img(src="/assets/images/materials/wallpapers.png", alt="")
           .materials__name Обои
-          .materials__info Качественные обои таких известных брендов как Calcutta, Chesterwall, Hookedonwalls, Khroma и многих других. От рулонных до панно, от фотообоев до стёганных. 
+          .materials__info Качественные обои таких известных брендов как Calcutta, Chesterwall, Hookedonwalls, Khroma и многих других. От рулонных до панно, от фотообоев до стёганных.
         .materials__item
           .materials__img
             img(src="/assets/images/materials/fasade.png", alt="")
           .materials__name Фасад
-          .materials__info Материалы для оформления фасада. С ними вы сможете оформить окно, установить колонну, украсить стену орнаментами и накладными элементами. 
+          .materials__info Материалы для оформления фасада. С ними вы сможете оформить окно, установить колонну, украсить стену орнаментами и накладными элементами.
         .materials__item
           .materials__img
             img(src="/assets/images/materials/floor.png", alt="")
           .materials__name Напольные покрытия
-          .materials__info Разнообразные напольные покрытия — качественный ламинат, ПВХ-плитка (виниловая), паркетные доски из натуральной древесины. 
+          .materials__info Разнообразные напольные покрытия — качественный ламинат, ПВХ-плитка (виниловая), паркетные доски из натуральной древесины.
         .materials__item
           .materials__img
             img(src="/assets/images/materials/glue.png", alt="")
@@ -132,39 +132,24 @@ block content
             img(src="/assets/images/materials/color.png", alt="")
           .materials__name Краски
           .materials__info Матовые, глянцевые и перламутровые краски разных цветов. В ассортименте представлены краски таких известных производителей как Sherwin Williams, Dulux и Sikkens.
-  //- section.stages
-  //-   .container
-  //-     .stages-container
-  //-       .stages-wrapper
-  //-         .stages-slide
-  //-           .stages__top
-  //-             img(src="/assets/images/lock.svg", alt="")
-  //-             a(href="/") Подробнее 
-  //-               img(src="/assets/images/more.svg", alt="")
-  //-           .stages__title Оплата
-  //-           p Заказать лепнину, напольные покрытия, краску или обои можно в офисе у менеджеров компании, либо отправив заявку через сайт или по телефону.
-  //-         .stages-slide
-  //-           .stages__top
-  //-             img(src="/assets/images/truck.svg", alt="")
-  //-             a(href="/") Подробнее 
-  //-               img(src="/assets/images/more.svg", alt="")
-  //-           .stages__title Доставка
-  //-           p Мы гарантируем бережное отношение к товару во время доставки. После получения и обработки заказа, товар будет доставлен в кратчайший срок.
-  //-         .stages-slide
-  //-           .stages__top
-  //-             img(src="/assets/images/lock.svg", alt="")
-  //-             a(href="/") Подробнее 
-  //-               img(src="/assets/images/more.svg", alt="")
-  //-           .stages__title Оплата
-  //-           p Заказать лепнину, напольные покрытия, краску или обои можно в офисе у менеджеров компании, либо отправив заявку через сайт или по телефону.
-  //-         .stages-slide
-  //-           .stages__top
-  //-             img(src="/assets/images/truck.svg", alt="")
-  //-             a(href="/") Подробнее 
-  //-               img(src="/assets/images/more.svg", alt="")
-  //-           .stages__title Доставка
-  //-           p Мы гарантируем бережное отношение к товару во время доставки. После получения и обработки заказа, товар будет доставлен в кратчайший срок.
-  //-       .stages-pagination
+  section.stages
+    .container
+      .stages-container
+        .stages-wrapper
+          .stages-slide
+            .stages__top
+              img(src="/assets/images/lock.svg", alt="")
+              a(href="/") Подробнее
+                img(src="/assets/images/more.svg", alt="")
+            .stages__title Оплата
+            p Заказать лепнину, напольные покрытия, краску или обои можно в офисе у менеджеров компании, либо отправив заявку через сайт или по телефону.
+          .stages-slide
+            .stages__top
+              img(src="/assets/images/truck.svg", alt="")
+              a(href="/") Подробнее
+                img(src="/assets/images/more.svg", alt="")
+            .stages__title Доставка
+            p Мы гарантируем бережное отношение к товару во время доставки. После получения и обработки заказа, товар будет доставлен в кратчайший срок.
   section.calc
     .container
       .calc__grid
@@ -193,7 +178,7 @@ block content
           .params
             .params__price
               .page-range
-                span(style="padding-top: 7px; text-align: left;") Цена
+                span(style="padding-top: 7px; text-align: left;font-size: 20px;line-height: 24px; color: #939393;") Цена
                 .min-max
                   span.range-min
                   span.range-max
@@ -202,10 +187,29 @@ block content
             .params__elems
               select(name="elem")
                 option(value="" default) Элемент декора
+                option(value="") Карнизы
+                option(value="") Молдинги
+                option(value="") Плинтусы
+                option(value="") Обрамление дверей
+                option(value="") Обрамление арок
+                option(value="") Полуколонны 
               select(name="brand")
                 option(value="" default) Бренд
-              select(name="state")  
+                option(value="") Arbition
+                option(value="") ART
+                option(value="") Artiva
+                option(value="") Artpole
+                option(value="") ARXAT
+                option(value="") Cosca
+              select(name="state")
                 option(value="" default) Страна производства
+                option(value="") Бельгия
+                option(value="") Китай
+                option(value="") Польша
+                option(value="") Россия
+                option(value="") США
+                option(value="") Украина
+                option(value="") Южная Корея
             .params__most
               .most__title Чаще всего ищут:
               .most__grid
@@ -270,38 +274,62 @@ block content
         li Обои
       ul.inspire__tabs-content
         li
-          img(src="/assets/images/inspire/1.png", alt="")
-          img(src="/assets/images/inspire/4.png", alt="")
-          img(src="/assets/images/inspire/2.png", alt="")
-          img(src="/assets/images/inspire/5.png", alt="")
-          img(src="/assets/images/inspire/3.png", alt="")
-          img(src="/assets/images/inspire/6.png", alt="")
+          div
+            img(src="/assets/images/inspire/1.png", alt="")
+          div
+            img(src="/assets/images/inspire/4.png", alt="")
+          div
+            img(src="/assets/images/inspire/2.png", alt="")
+          div
+            img(src="/assets/images/inspire/5.png", alt="")
+          div
+            img(src="/assets/images/inspire/3.png", alt="")
+          div
+            img(src="/assets/images/inspire/6.png", alt="")
         li
-          img(src="/assets/images/inspire/1.png", alt="")
-          img(src="/assets/images/inspire/4.png", alt="")
-          img(src="/assets/images/inspire/2.png", alt="")
-          img(src="/assets/images/inspire/5.png", alt="")
-          img(src="/assets/images/inspire/3.png", alt="")
-          img(src="/assets/images/inspire/6.png", alt="")
+          div
+            img(src="/assets/images/inspire/color/1.png", alt="")
+          div
+            img(src="/assets/images/inspire/color/4.png", alt="")
+          div
+            img(src="/assets/images/inspire/color/2.png", alt="")
+          div
+            img(src="/assets/images/inspire/color/5.png", alt="")
+          div
+            img(src="/assets/images/inspire/color/3.png", alt="")
+          div
+            img(src="/assets/images/inspire/color/6.png", alt="")
         li
-          img(src="/assets/images/inspire/1.png", alt="")
-          img(src="/assets/images/inspire/4.png", alt="")
-          img(src="/assets/images/inspire/2.png", alt="")
-          img(src="/assets/images/inspire/5.png", alt="")
-          img(src="/assets/images/inspire/3.png", alt="")
-          img(src="/assets/images/inspire/6.png", alt="")
+          div
+            img(src="/assets/images/inspire/floor/1.png", alt="")
+          div
+            img(src="/assets/images/inspire/floor/4.png", alt="")
+          div
+            img(src="/assets/images/inspire/floor/2.png", alt="")
+          div
+            img(src="/assets/images/inspire/floor/5.png", alt="")
+          div
+            img(src="/assets/images/inspire/floor/3.png", alt="")
+          div
+            img(src="/assets/images/inspire/floor/6.png", alt="")
         li
-          img(src="/assets/images/inspire/1.png", alt="")
-          img(src="/assets/images/inspire/4.png", alt="")
-          img(src="/assets/images/inspire/2.png", alt="")
-          img(src="/assets/images/inspire/5.png", alt="")
-          img(src="/assets/images/inspire/3.png", alt="")
-          img(src="/assets/images/inspire/6.png", alt="")
+          div
+            img(src="/assets/images/inspire/walls/1.png", alt="")
+          div
+            img(src="/assets/images/inspire/walls/4.png", alt="")
+          div
+            img(src="/assets/images/inspire/walls/2.png", alt="")
+          div
+            img(src="/assets/images/inspire/walls/5.png", alt="")
+          div
+            img(src="/assets/images/inspire/walls/3.png", alt="")
+          div
+            img(src="/assets/images/inspire/walls/6.png", alt="")
   section.video
     .container
       .video__body
         .video__video
-          img(src="/assets/images/video.png", alt="")  
+          img(src="/assets/images/video.png", alt="")
         .video__content
           .video__title Подарите интерьеру новое настроение вместе с Lepnina.Top
           button Видеогалерея
@@ -351,14 +379,14 @@ block content
         label(for="name").container-checkbox  Я даю согласие на обработку моих персональных данных
         input(type="checkbox" name="check")
         span.checkmark
-    
+
   section.map
 
 
-    
-          
 
-        
+
+
+
 
 
 
